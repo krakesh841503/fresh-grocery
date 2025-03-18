@@ -1,0 +1,138 @@
+:root {
+    --darky: #ffc222;
+    --black: #1e1d23;
+    --dimgray: #808080;
+}
+/* myfont-family */
+@font-face {
+    font-family: pt-sans;
+    src: url('font/PT_Sans/PTSans-Regular.ttf');
+}
+@font-face {
+    font-family: raleway;
+    src: url('font/Raleway/static/Raleway-Bold.ttf');
+}
+@font-face {
+    font-family: my-cursive;
+    src: url('font/Great_Vibes/GreatVibes-Regular.ttf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: pt-sans;
+}
+
+
+/* --------------page-------------- */
+/* change-navigation according to my-page */
+/*------ dropdown------ */
+.my-container menu li{
+    position: relative;
+ }
+ .drop-item{
+     display: none;
+     background-color:rgb(238, 220, 220);
+     width: calc(150px + 2vw);
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     position: absolute;
+     top: 100%;
+     z-index: 100;
+ }
+ .my-container #home-menu li .drop-item a{
+     display: block;
+     color: var(--dimgray);
+     font-weight: 300;
+     font-size: calc(12px + 0.3vw);
+     padding:6px 20px;
+     border-top:1px #ddd solid;
+ }
+ .drop-item :nth-last-child(){
+     margin-bottom: 30px;
+ }
+  .drop-item a:nth-child(1){
+     background-color:var(--darky);
+     color: red;
+ }
+ .drop-item a:hover{
+     background-color:var(--darky);
+     color: white;
+ }
+ .mydemo:hover .drop-item{
+     display: block;   
+ } 
+
+
+
+
+/* my-page section */
+.page-img{
+    background-image: url('page.png');
+    height: calc(200px + 30vw);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.our-work{
+    color: var(--black);
+    font-size: calc(1rem + 2vw);
+    font-weight: 700;
+}
+
+.food-for{
+    color: var(--dimgray);
+    padding-top: 0.7rem;
+    font-size: calc(0.6rem + 0.7vw);
+    line-height: 1.5rem;
+}
+#pos-rel1{
+    position: relative;
+}
+#pos-rel2{
+    position: relative;
+    position: absolute;
+    left:5%;
+    
+}
+
+#pos-rel3{
+    position: relative;
+    position: absolute;
+    left: 70%;
+    
+}
+
+
+#pos-rel4{
+    position: absolute;
+    left: 70%;
+}
+#pos-rel1 img{
+    border: 2px solid rgb(221, 221, 228);
+    border-radius: 50%;
+}
+
+
+#pos-rel1 img:hover{
+    z-index: 100;
+}
+
+#our-happy{
+    color: var(--black);
+    font-size: calc(1rem + 0.5vw);
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+#review{
+    font-size: calc(0.5rem + 0.7vw);
+    color: var(--dimgray);
+}
